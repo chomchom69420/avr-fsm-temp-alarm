@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1681417712 source:/home/sohamchakraborty/Desktop/Project 3/delay.c
+	"delay.h"
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/delay.h
+
+1680913028 source:/home/sohamchakraborty/Desktop/Project 3/led.c
+	"delay.h"
+	"led.h"
+	<string.h>
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/led.h
+
+1681819652 source:/home/sohamchakraborty/Desktop/Project 3/main.c
+	"alarm.h"
+	"config.h"
+	"delay.h"
+	"eeprom.h"
+	"led.h"
+	"log.h"
+	"rtc.h"
+	"temp.h"
+	"tempfsm.h"
+	"uart.h"
+	"uartsocket.h"
+	"util.h"
+	"process_packet.h"
+	"vpd.h"
+	"wdt.h"
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/alarm.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/config.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/eeprom.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/log.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/rtc.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/temp.h
+
+1570754890 /home/sohamchakraborty/Desktop/Project 3/tempfsm.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/uart.h
+
+1570755714 /home/sohamchakraborty/Desktop/Project 3/uartsocket.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/util.h
+
+1570756072 /home/sohamchakraborty/Desktop/Project 3/process_packet.h
+
+1570754814 /home/sohamchakraborty/Desktop/Project 3/vpd.h
+
+1570754896 /home/sohamchakraborty/Desktop/Project 3/wdt.h
+
+1681822312 source:/home/sohamchakraborty/Desktop/Project 3/tempfsm.c
+	"tempfsm.h"
+	"alarm.h"
+	"led.h"
+	"log.h"
+
+1681820442 source:/home/sohamchakraborty/Desktop/Project 3/util.c
+	"util.h"
+	"string.h"
+	"process_packet.h"
+	"config.h"
+
+1681823206 source:/home/sohamchakraborty/Desktop/Project 3/wdt.c
+	"wdt.h"
+	"log.h"
+	"config.h"
+	"led.h"
+
