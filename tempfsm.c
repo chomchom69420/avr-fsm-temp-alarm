@@ -23,6 +23,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if(current >= hiwarn)
         {
             alarm_send(EVENT_HI_WARN);
+            log_add_record(EVENT_HI_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_HI1;
@@ -30,6 +31,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if (current<= lowarn)
         {
             alarm_send(EVENT_LO_WARN);
+            log_add_record(EVENT_LO_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_LO1;
@@ -40,6 +42,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if(current > hicrit)
         {
             alarm_send(EVENT_HI_ALARM);
+            log_add_record(EVENT_HI_ALARM);
             led_set_blink(".");     //Next state is a critical state
             led_update();
             temp_state = CRITICAL_HI;
@@ -56,6 +59,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if(current<=locrit)
         {
             alarm_send(EVENT_LO_ALARM);
+            log_add_record(EVENT_LO_ALARM);
             led_set_blink(".");     //Next state is a critical state
             led_update();
             temp_state = CRITICAL_LO;
@@ -72,6 +76,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if(current>=hiwarn)
         {
             alarm_send(EVENT_HI_WARN);
+            log_add_record(EVENT_HI_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_HI1;
@@ -79,6 +84,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if (current<=lowarn)
         {
             alarm_send(EVENT_LO_WARN);
+            log_add_record(EVENT_LO_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_LO1;
@@ -89,6 +95,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if(current>=hiwarn)
         {
             alarm_send(EVENT_HI_WARN);
+            log_add_record(EVENT_HI_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_HI1;
@@ -96,6 +103,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         if (current<=lowarn)
         {
             alarm_send(EVENT_LO_WARN);
+            log_add_record(EVENT_LO_WARN);
             led_set_blink("-");     //Next state is a warning state
             led_update();
             temp_state = WARN_LO1;

@@ -22,13 +22,14 @@
 #pragma GCC optimize ("Os")
 void wdt_init()
 {
+    //Clear WDRF in MCUSR
+    //MCUSR &= ~(1<<WDRF);
+
     //Setting the pre-scalar for timeout period of 2s
     WDTCSR |= (1<<WDP0) | (1<<WDP1) | (1<<WDP2);
 
     //Interrupt and system reset mode
-    WDTCSR |= (1<<WDIE);
-
-    WDTCSR |= (1<<WDE);
+    WDTCSR |= (1<<WDIE) | (1<<WDE);
 
     //Initizaize global interrupts
     SREG |= (1<<I_SREG);
@@ -38,8 +39,13 @@ void wdt_init()
 void wdt_reset()
 {
     __builtin_avr_wdr();
+
+    //Clear WDRF in MCUSR
+    //MCUSR &= ~(1<<WDRF);
 }
 
+#pragma GCC push_options
+#pragma GCC optimize ("Os")
 void wdt_force_restart()
 {
     //disables interrupt
@@ -54,6 +60,7 @@ void wdt_force_restart()
     //Wait for reset
     while(1);
 }
+#pragma GCC pop_options
 
 void __vector_6(void) __attribute__ ((signal, used, externally_visible));
 
@@ -62,19 +69,18 @@ void __vector_6(void)
     //Turns on LED
     led_on();
 
-    //Add EVENT_WDT to system event log
+    //Add EVENT_WDT to system event log for wdt timeout
     log_add_record(EVENT_WDT);
 
     //Write modified log entries to EEPROM
     for(int i=0;i<16;i++)
         log_update_noisr();
 
-
     //Write modified config data to EEPROM
     config_update_noisr();
 
     //Set the interrupt
-    WDTCSR |= (1<<WDIE);
+    //WDTCSR |= (1<<WDIE);
 }
 
 
