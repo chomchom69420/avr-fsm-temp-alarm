@@ -20,11 +20,9 @@ unsigned char calc_checksum(unsigned char *data, unsigned int dsize)
             //carry wraparound
             checksum_result+=1;
         }
-
     }
 
     return ~checksum_result;
-
 }
 
 /*

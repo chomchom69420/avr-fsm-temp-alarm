@@ -1,25 +1,25 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
-                              obj/Debug/main.o (alarm_init)
+                              obj/Release/main.o (alarm_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                              obj/Debug/main.o (config)
+                              obj/Release/main.o (config)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o) (eeprom_writebuf)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
-                              obj/Debug/main.o (log_init)
+                              obj/Release/main.o (log_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
-                              obj/Debug/main.o (rtc_init)
+                              obj/Release/main.o (rtc_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o) (str_cpy)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(temp.o)
-                              obj/Debug/main.o (temp_init)
+                              obj/Release/main.o (temp_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(timer1.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o) (timer1_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
-                              obj/Debug/main.o (uart_init)
+                              obj/Release/main.o (uart_init)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                              obj/Debug/main.o (uartsocket_writestr)
+                              obj/Release/main.o (uartsocket_writestr)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o) (str_cmp)
 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
@@ -41,17 +41,17 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o (exit)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                              obj/Debug/tempfsm.o (__tablejump2__)
+                              obj/Release/tempfsm.o (__tablejump2__)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
-                              obj/Debug/main.o (__do_copy_data)
+                              obj/Release/main.o (__do_copy_data)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
-                              obj/Debug/delay.o (__do_clear_bss)
+                              obj/Release/delay.o (__do_clear_bss)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o) (__umulhisi3)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_muluhisi3.o)
                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o) (__muluhisi3)
 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strlen.o)
-                              obj/Debug/led.o (strlen)
+                              obj/Release/led.o (strlen)
 
 Allocating common symbols
 Common symbol       size              file
@@ -62,10 +62,10 @@ vpd                 0x37              /home/sohamchakraborty/Desktop/Project 3/l
 writeaddr           0x2               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
 rtc_base            0x4               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
 writesize           0x1               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
-blink_state         0x2               obj/Debug/led.o
-Blink_msg           0x2               obj/Debug/led.o
-Blink_pos           0x2               obj/Debug/led.o
-temp_state          0x2               obj/Debug/tempfsm.o
+blink_state         0x2               obj/Release/led.o
+Blink_msg           0x2               obj/Release/led.o
+Blink_pos           0x2               obj/Release/led.o
+temp_state          0x2               obj/Release/tempfsm.o
 writebuf            0x40              /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
 txbuf               0x40              /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(serial.o)
 bufidx              0x1               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
@@ -87,12 +87,12 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
-LOAD obj/Debug/delay.o
-LOAD obj/Debug/led.o
-LOAD obj/Debug/main.o
-LOAD obj/Debug/tempfsm.o
-LOAD obj/Debug/util.o
-LOAD obj/Debug/wdt.o
+LOAD obj/Release/delay.o
+LOAD obj/Release/led.o
+LOAD obj/Release/main.o
+LOAD obj/Release/tempfsm.o
+LOAD obj/Release/util.o
+LOAD obj/Release/wdt.o
 LOAD /home/sohamchakraborty/Desktop/Project 3/lib_projc.a
 LOAD /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a
 LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libm.a
@@ -208,7 +208,7 @@ END GROUP
  *(.vectors)
  *(.progmem.gcc*)
  .progmem.gcc_sw_table
-                0x0000000000000068       0x12 obj/Debug/tempfsm.o
+                0x0000000000000068       0x12 obj/Release/tempfsm.o
                 0x000000000000007a                . = ALIGN (0x2)
                 0x000000000000007a                __trampolines_start = .
  *(.trampolines)
@@ -281,32 +281,32 @@ END GROUP
                 0x00000000000000b4                __vector_10
                 0x00000000000000b4                __vector_16
                 0x00000000000000b4                __vector_20
- .text          0x00000000000000b8      0x2a8 obj/Debug/delay.o
+ .text          0x00000000000000b8      0x2a8 obj/Release/delay.o
                 0x00000000000000b8                delay_init
                 0x0000000000000138                delay_get
                 0x00000000000001b8                delay_set
                 0x0000000000000258                delay_isdone
                 0x00000000000002b0                __vector_14
- .text          0x0000000000000360      0x20e obj/Debug/led.o
+ .text          0x0000000000000360      0x20e obj/Release/led.o
                 0x0000000000000360                led_init
                 0x0000000000000394                led_on
                 0x00000000000003b6                led_off
                 0x00000000000003d8                led_is_on
                 0x0000000000000402                led_set_blink
                 0x0000000000000448                led_update
- .text          0x000000000000056e      0x120 obj/Debug/main.o
+ .text          0x000000000000056e      0x120 obj/Release/main.o
                 0x000000000000056e                main
- .text          0x000000000000068e      0x3b4 obj/Debug/tempfsm.o
+ .text          0x000000000000068e      0x3b4 obj/Release/tempfsm.o
                 0x000000000000068e                tempfsm_init
                 0x00000000000006a6                tempfsm_reset
                 0x00000000000006be                tempfsm_update
- .text          0x0000000000000a42      0x1b0 obj/Debug/util.o
+ .text          0x0000000000000a42      0x1b0 obj/Release/util.o
                 0x0000000000000a42                calc_checksum
                 0x0000000000000ac4                update_tcrit_hi
                 0x0000000000000b0e                update_twarn_hi
                 0x0000000000000b60                update_twarn_lo
                 0x0000000000000bb2                update_tcrit_lo
- .text          0x0000000000000bf2       0xc6 obj/Debug/wdt.o
+ .text          0x0000000000000bf2       0xc6 obj/Release/wdt.o
                 0x0000000000000bf2                wdt_init
                 0x0000000000000c04                wdt_reset
                 0x0000000000000c16                wdt_force_restart
@@ -627,13 +627,13 @@ END GROUP
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
- .data          0x0000000000800100        0x0 obj/Debug/delay.o
- .data          0x0000000000800100        0x0 obj/Debug/led.o
- .data          0x0000000000800100        0x2 obj/Debug/main.o
+ .data          0x0000000000800100        0x0 obj/Release/delay.o
+ .data          0x0000000000800100        0x0 obj/Release/led.o
+ .data          0x0000000000800100        0x2 obj/Release/main.o
                 0x0000000000800100                current_temperature
- .data          0x0000000000800102        0x0 obj/Debug/tempfsm.o
- .data          0x0000000000800102        0x0 obj/Debug/util.o
- .data          0x0000000000800102        0x0 obj/Debug/wdt.o
+ .data          0x0000000000800102        0x0 obj/Release/tempfsm.o
+ .data          0x0000000000800102        0x0 obj/Release/util.o
+ .data          0x0000000000800102        0x0 obj/Release/wdt.o
  .data          0x0000000000800102        0x0 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
  .data          0x0000000000800102       0x12 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
  .data          0x0000000000800114        0x0 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
@@ -662,8 +662,8 @@ END GROUP
  .data          0x0000000000800130        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strlen.o)
  *(.data*)
  *(.rodata)
- .rodata        0x0000000000800130       0x5b obj/Debug/main.o
- .rodata        0x000000000080018b        0x6 obj/Debug/tempfsm.o
+ .rodata        0x0000000000800130       0x5b obj/Release/main.o
+ .rodata        0x000000000080018b        0x6 obj/Release/tempfsm.o
  .rodata        0x0000000000800191        0xc /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
  .rodata        0x000000000080019d       0x37 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
  *(.rodata*)
@@ -687,12 +687,12 @@ END GROUP
                 0x00000000008003bc                PROVIDE (__bss_start, .)
  *(.bss)
  .bss           0x00000000008003bc        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
- .bss           0x00000000008003bc        0x9 obj/Debug/delay.o
- .bss           0x00000000008003c5        0x0 obj/Debug/led.o
- .bss           0x00000000008003c5        0x0 obj/Debug/main.o
- .bss           0x00000000008003c5        0x0 obj/Debug/tempfsm.o
- .bss           0x00000000008003c5        0x0 obj/Debug/util.o
- .bss           0x00000000008003c5        0x0 obj/Debug/wdt.o
+ .bss           0x00000000008003bc        0x9 obj/Release/delay.o
+ .bss           0x00000000008003c5        0x0 obj/Release/led.o
+ .bss           0x00000000008003c5        0x0 obj/Release/main.o
+ .bss           0x00000000008003c5        0x0 obj/Release/tempfsm.o
+ .bss           0x00000000008003c5        0x0 obj/Release/util.o
+ .bss           0x00000000008003c5        0x0 obj/Release/wdt.o
  .bss           0x00000000008003c5        0x0 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
  .bss           0x00000000008003c5        0x1 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
  .bss           0x00000000008003c6        0x0 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
@@ -725,11 +725,11 @@ END GROUP
  .bss           0x0000000000800494        0x0 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strlen.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x0000000000800494        0x6 obj/Debug/led.o
+ COMMON         0x0000000000800494        0x6 obj/Release/led.o
                 0x0000000000800494                blink_state
                 0x0000000000800496                Blink_msg
                 0x0000000000800498                Blink_pos
- COMMON         0x000000000080049a        0x2 obj/Debug/tempfsm.o
+ COMMON         0x000000000080049a        0x2 obj/Release/tempfsm.o
                 0x000000000080049a                temp_state
  COMMON         0x000000000080049c       0x12 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
                 0x000000000080049c                config
@@ -776,23 +776,11 @@ END GROUP
 .user_signatures
  *(.user_signatures*)
 
-.stab           0x0000000000000000     0x24f0
+.stab
  *(.stab)
- .stab          0x0000000000000000      0x678 obj/Debug/delay.o
- .stab          0x0000000000000678      0x6cc obj/Debug/led.o
-                                        0x6d8 (size before relaxing)
- .stab          0x0000000000000d44      0x4f8 obj/Debug/main.o
-                                        0x504 (size before relaxing)
- .stab          0x000000000000123c      0x864 obj/Debug/tempfsm.o
-                                        0x870 (size before relaxing)
- .stab          0x0000000000001aa0      0x600 obj/Debug/util.o
-                                        0x66c (size before relaxing)
- .stab          0x00000000000020a0      0x450 obj/Debug/wdt.o
-                                        0x474 (size before relaxing)
 
-.stabstr        0x0000000000000000     0x11ed
+.stabstr
  *(.stabstr)
- .stabstr       0x0000000000000000     0x11ed obj/Debug/delay.o
 
 .stab.excl
  *(.stab.excl)
@@ -808,13 +796,13 @@ END GROUP
 
 .comment        0x0000000000000000       0x11
  *(.comment)
- .comment       0x0000000000000000       0x11 obj/Debug/delay.o
+ .comment       0x0000000000000000       0x11 obj/Release/delay.o
                                          0x12 (size before relaxing)
- .comment       0x0000000000000011       0x12 obj/Debug/led.o
- .comment       0x0000000000000011       0x12 obj/Debug/main.o
- .comment       0x0000000000000011       0x12 obj/Debug/tempfsm.o
- .comment       0x0000000000000011       0x12 obj/Debug/util.o
- .comment       0x0000000000000011       0x12 obj/Debug/wdt.o
+ .comment       0x0000000000000011       0x12 obj/Release/led.o
+ .comment       0x0000000000000011       0x12 obj/Release/main.o
+ .comment       0x0000000000000011       0x12 obj/Release/tempfsm.o
+ .comment       0x0000000000000011       0x12 obj/Release/util.o
+ .comment       0x0000000000000011       0x12 obj/Release/wdt.o
  .comment       0x0000000000000011       0x12 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
  .comment       0x0000000000000011       0x12 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
  .comment       0x0000000000000011       0x12 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
@@ -900,14 +888,14 @@ END GROUP
 
 .debug_macro
  *(.debug_macro)
-OUTPUT(bin/Debug/proj3.elf elf32-avr)
+OUTPUT(bin/Release/proj3.elf elf32-avr)
 LOAD linker stubs
 
 Cross Reference Table
 
 Symbol                                            File
-Blink_msg                                         obj/Debug/led.o
-Blink_pos                                         obj/Debug/led.o
+Blink_msg                                         obj/Release/led.o
+Blink_pos                                         obj/Release/led.o
 __FUSE_REGION_LENGTH__                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __bad_interrupt                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __bss_end                                         /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
@@ -929,9 +917,9 @@ __do_clear_bss                                    /usr/lib/gcc/avr/5.4.0/avr5/li
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                                                  obj/Debug/tempfsm.o
-                                                  obj/Debug/led.o
-                                                  obj/Debug/delay.o
+                                                  obj/Release/tempfsm.o
+                                                  obj/Release/led.o
+                                                  obj/Release/delay.o
 __do_copy_data                                    /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
@@ -940,8 +928,8 @@ __do_copy_data                                    /usr/lib/gcc/avr/5.4.0/avr5/li
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
-                                                  obj/Debug/tempfsm.o
-                                                  obj/Debug/main.o
+                                                  obj/Release/tempfsm.o
+                                                  obj/Release/main.o
 __heap_end                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __init                                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __mulsi3                                          /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulsi3.o)
@@ -956,7 +944,7 @@ __negsi2                                          /usr/lib/gcc/avr/5.4.0/avr5/li
                                                   /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
 __stack                                           /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __tablejump2__                                    /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                                                  obj/Debug/tempfsm.o
+                                                  obj/Release/tempfsm.o
 __udivmodhi4                                      /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
                                                   /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
@@ -974,7 +962,7 @@ __vector_11                                       /home/sohamchakraborty/Desktop
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_12                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_13                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
-__vector_14                                       obj/Debug/delay.o
+__vector_14                                       obj/Release/delay.o
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_15                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_16                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
@@ -994,7 +982,7 @@ __vector_25                                       /usr/lib/gcc/avr/5.4.0/../../.
 __vector_3                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_4                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_5                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
-__vector_6                                        obj/Debug/wdt.o
+__vector_6                                        obj/Release/wdt.o
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_7                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 __vector_8                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
@@ -1004,40 +992,40 @@ __vectors                                         /usr/lib/gcc/avr/5.4.0/../../.
 _div                                              /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodhi4.o)
 _exit                                             /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
 alarm_init                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 alarm_send                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
-                                                  obj/Debug/tempfsm.o
-blink_state                                       obj/Debug/led.o
+                                                  obj/Release/tempfsm.o
+blink_state                                       obj/Release/led.o
 bufidx                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
-calc_checksum                                     obj/Debug/util.o
+calc_checksum                                     obj/Release/util.o
 config                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                                                  obj/Debug/util.o
-                                                  obj/Debug/main.o
+                                                  obj/Release/util.o
+                                                  obj/Release/main.o
 config_init                                       /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 config_is_data_valid                              /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
 config_set_modified                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
 config_update                                     /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 config_update_noisr                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                                                  obj/Debug/wdt.o
+                                                  obj/Release/wdt.o
 config_write_defaults                             /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-current_temperature                               obj/Debug/main.o
+current_temperature                               obj/Release/main.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-delay_get                                         obj/Debug/delay.o
-delay_init                                        obj/Debug/delay.o
-delay_isdone                                      obj/Debug/delay.o
-                                                  obj/Debug/main.o
-                                                  obj/Debug/led.o
-delay_set                                         obj/Debug/delay.o
-                                                  obj/Debug/main.o
-                                                  obj/Debug/led.o
+delay_get                                         obj/Release/delay.o
+delay_init                                        obj/Release/delay.o
+delay_isdone                                      obj/Release/delay.o
+                                                  obj/Release/main.o
+                                                  obj/Release/led.o
+delay_set                                         obj/Release/delay.o
+                                                  obj/Release/main.o
+                                                  obj/Release/led.o
 eeprom_isbusy                                     /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 eeprom_readbuf                                    /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
@@ -1054,21 +1042,21 @@ exit                                              /usr/lib/gcc/avr/5.4.0/avr5/li
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 get_month                                         /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
 is_leapyear                                       /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
-led_init                                          obj/Debug/led.o
-                                                  obj/Debug/main.o
-led_is_on                                         obj/Debug/led.o
-led_off                                           obj/Debug/led.o
-led_on                                            obj/Debug/led.o
-                                                  obj/Debug/wdt.o
-led_set_blink                                     obj/Debug/led.o
-                                                  obj/Debug/tempfsm.o
-led_update                                        obj/Debug/led.o
-                                                  obj/Debug/tempfsm.o
-                                                  obj/Debug/main.o
+led_init                                          obj/Release/led.o
+                                                  obj/Release/main.o
+led_is_on                                         obj/Release/led.o
+led_off                                           obj/Release/led.o
+led_on                                            obj/Release/led.o
+                                                  obj/Release/wdt.o
+led_set_blink                                     obj/Release/led.o
+                                                  obj/Release/tempfsm.o
+led_update                                        obj/Release/led.o
+                                                  obj/Release/tempfsm.o
+                                                  obj/Release/main.o
 log_add_record                                    /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
-                                                  obj/Debug/wdt.o
-                                                  obj/Debug/tempfsm.o
-                                                  obj/Debug/main.o
+                                                  obj/Release/wdt.o
+                                                  obj/Release/tempfsm.o
+                                                  obj/Release/main.o
 log_clear                                         /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 log_get_num_entries                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
@@ -1076,19 +1064,19 @@ log_get_num_entries                               /home/sohamchakraborty/Desktop
 log_get_record                                    /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 log_init                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 log_is_data_valid                                 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
 log_update                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 log_update_noisr                                  /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
-                                                  obj/Debug/wdt.o
-main                                              obj/Debug/main.o
+                                                  obj/Release/wdt.o
+main                                              obj/Release/main.o
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega328p.o
 mem_cmp                                           /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
 mem_cpy                                           /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
 mem_set                                           /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
 parse_and_send_response                           /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 random                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
 random_seed                                       /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
 rtc_base                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
@@ -1096,7 +1084,7 @@ rtc_get_date                                      /home/sohamchakraborty/Desktop
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
 rtc_get_date_string                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
 rtc_init                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 rtc_num2datestr                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 rtc_set_by_datestr                                /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
@@ -1134,21 +1122,21 @@ str_len                                           /home/sohamchakraborty/Desktop
 str_writeudec16                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(str.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
 strlen                                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libc.a(strlen.o)
-                                                  obj/Debug/led.o
+                                                  obj/Release/led.o
 strtoi                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
 temp_get                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(temp.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 temp_init                                         /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(temp.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 temp_is_data_ready                                /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(temp.o)
 temp_start                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(temp.o)
-                                                  obj/Debug/main.o
-temp_state                                        obj/Debug/tempfsm.o
-tempfsm_init                                      obj/Debug/tempfsm.o
-                                                  obj/Debug/main.o
-tempfsm_reset                                     obj/Debug/tempfsm.o
-tempfsm_update                                    obj/Debug/tempfsm.o
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
+temp_state                                        obj/Release/tempfsm.o
+tempfsm_init                                      obj/Release/tempfsm.o
+                                                  obj/Release/main.o
+tempfsm_reset                                     obj/Release/tempfsm.o
+tempfsm_update                                    obj/Release/tempfsm.o
+                                                  obj/Release/main.o
 timer1_clear                                      /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(timer1.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(rtc.o)
 timer1_get                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(timer1.o)
@@ -1159,7 +1147,7 @@ txbuf                                             /home/sohamchakraborty/Desktop
 txhead                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(serial.o)
 txtail                                            /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(serial.o)
 uart_init                                         /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 uart_is_connected                                 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
 uart_is_packet_available                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
 uart_readpacket                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
@@ -1176,42 +1164,42 @@ uart_writeip                                      /home/sohamchakraborty/Desktop
 uart_writestr                                     /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uart.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(alarm.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 uartsocket_is_connected                           /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 uartsocket_is_packet_available                    /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 uartsocket_readpacket                             /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 uartsocket_writechar                              /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 uartsocket_writedec32                             /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 uartsocket_writehex16                             /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 uartsocket_writehex8                              /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 uartsocket_writestr                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 update_checksum                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(util.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(log.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(config.o)
-update_tcrit_hi                                   obj/Debug/util.o
+update_tcrit_hi                                   obj/Release/util.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-update_tcrit_lo                                   obj/Debug/util.o
+update_tcrit_lo                                   obj/Release/util.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-update_twarn_hi                                   obj/Debug/util.o
+update_twarn_hi                                   obj/Release/util.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-update_twarn_lo                                   obj/Debug/util.o
+update_twarn_lo                                   obj/Release/util.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 vpd                                               /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
 vpd_init                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
-                                                  obj/Debug/main.o
+                                                  obj/Release/main.o
 vpd_is_data_valid                                 /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
 vpd_write_defaults                                /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(vpd.o)
-wdt_force_restart                                 obj/Debug/wdt.o
+wdt_force_restart                                 obj/Release/wdt.o
                                                   /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(uartsocket.o)
-wdt_init                                          obj/Debug/wdt.o
-                                                  obj/Debug/main.o
-wdt_reset                                         obj/Debug/wdt.o
-                                                  obj/Debug/main.o
+wdt_init                                          obj/Release/wdt.o
+                                                  obj/Release/main.o
+wdt_reset                                         obj/Release/wdt.o
+                                                  obj/Release/main.o
 write_busy                                        /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
 writeaddr                                         /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)
 writebuf                                          /home/sohamchakraborty/Desktop/Project 3/lib_projc.a(eeprom.o)

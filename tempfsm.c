@@ -39,7 +39,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         break;
 
     case WARN_HI1:
-        if(current > hicrit)
+        if(current >= hicrit)
         {
             alarm_send(EVENT_HI_ALARM);
             log_add_record(EVENT_HI_ALARM);
@@ -129,7 +129,7 @@ void tempfsm_update(int current, int hicrit, int hiwarn, int locrit, int lowarn)
         break;
 
     case WARN_LO2:
-        if(current < locrit)
+        if(current <= locrit)
         {
             led_set_blink(".");     //Next state is a critical state
             led_update();

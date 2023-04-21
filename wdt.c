@@ -26,7 +26,7 @@ void wdt_init()
     //MCUSR &= ~(1<<WDRF);
 
     //Setting the pre-scalar for timeout period of 2s
-    WDTCSR |= (1<<WDP0) | (1<<WDP1) | (1<<WDP2);
+    //WDTCSR |= (1<<WDP0) | (1<<WDP1) | (1<<WDP2);
 
     //Interrupt and system reset mode
     WDTCSR |= (1<<WDIE) | (1<<WDE);
